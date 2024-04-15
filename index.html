@@ -1,1 +1,35 @@
-<iframe src="Lee_Lucian_Assignment_0/main/asg0.html" width="100%" height="600px"></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Link to Assignment 0</title>
+</head>
+<body>
+    <h1>Welcome to my CSE 160 page!</h1>
+    <p>Click the link below to go to whichever assignment.</p>
+    
+    <!-- Link that the user can click to load Assignment 0 -->
+    <a href="#" onclick="loadAssignment0(); return false;">Go to Assignment 0</a>
+
+    <!-- Link that the user can click to load Assignment 1 -->
+    <a href="#" onclick="loadAssignment1(); return false;">Go to Assignment 1</a>
+
+    <!-- Iframe to display content -->
+    <iframe id="assignmentFrame" src="Lee_Lucian_Assignment_0/main/asg0.html" width="100%" height="600px"></iframe>
+    <iframe id="assignmentFrame" src="Lee_Lucian_Assignment_1/main/ColoredPoints.html" width="100%" height="600px"></iframe>
+
+    <script>
+        function loadAssignment0() {
+            var iframe = document.getElementById('assignmentFrame');
+            iframe.src = "Lee_Lucian_Assignment_0/main/asg0.html";
+        }
+    </script>
+
+    <script>
+        function loadAssignment1() {
+            var iframe = document.getElementById('assignmentFrame');
+            iframe.src = "Lee_Lucian_Assignment_1/main/ColoredPoints.html";
+        }
+    </script>
+</body>
+</html>
