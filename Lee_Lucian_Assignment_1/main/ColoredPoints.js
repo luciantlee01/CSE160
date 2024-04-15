@@ -158,7 +158,7 @@ function renderAllShapes() {
 
 function createDrawing() {
     const vertices = [
-        // Roof
+        // Roof for the house
         -0.3, 0.1, 0.0, 0.4, 0.3, 0.1,
 
         // Body of the house
