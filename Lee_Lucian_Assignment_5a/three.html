@@ -54,7 +54,7 @@ function main() {
     // Grass Ground Plane
     const planeSize = 150;
     const loader = new THREE.TextureLoader();
-    const grassTexture = loader.load('/Lee_Lucian_Assignment_5a/resources/images/grass.jpeg');  // Grass texture
+    const grassTexture = loader.load('https://luciantlee01.github.io/Lee_Lucian_Assignment_5a/resources/images/grass.jpeg');  // Grass texture
     grassTexture.colorSpace = THREE.SRGBColorSpace;
     grassTexture.wrapS = THREE.RepeatWrapping;
     grassTexture.wrapT = THREE.RepeatWrapping;
@@ -85,13 +85,13 @@ function main() {
     // Load Windmill
     const mtlLoader = new MTLLoader();
 
-    mtlLoader.setPath('/Lee_Lucian_Assignment_5a/resources/model/tower/');
+    mtlLoader.setPath('https://luciantlee01.github.io/Lee_Lucian_Assignment_5a/resources/model/tower/');
 
     mtlLoader.load('tower.mtl', (mtl) => {
         mtl.preload();
         const objLoader = new OBJLoader();
         objLoader.setMaterials(mtl);
-        objLoader.setPath('/Lee_Lucian_Assignment_5a/resources/model/tower/');
+        objLoader.setPath('https://luciantlee01.github.io/Lee_Lucian_Assignment_5a/resources/model/tower/');
 
         objLoader.load('tower.obj', (root) => {
             root.scale.set(1.8, 1.8, 1.8);  // Scale down the windmill
@@ -111,13 +111,13 @@ function main() {
     // Load Big Ben
     const benmtlLoader = new MTLLoader();
 
-    benmtlLoader.setPath('/Lee_Lucian_Assignment_5a/resources/model/bridgenew/');
+    benmtlLoader.setPath('https://luciantlee01.github.io/Lee_Lucian_Assignment_5a/resources/model/bridgenew/');
 
     benmtlLoader.load('ponte.mtl', (mtl) => {
         mtl.preload();
         const benobjLoader = new OBJLoader();
         benobjLoader.setMaterials(mtl);
-        benobjLoader.setPath('/Lee_Lucian_Assignment_5a/resources/model/bridgenew/');
+        benobjLoader.setPath('https://luciantlee01.github.io/Lee_Lucian_Assignment_5a/resources/model/bridgenew/');
 
         benobjLoader.load('ponte.obj', (ben) => {
             ben.scale.set(.5, .5, .5);  // Scale the big ben
@@ -139,13 +139,13 @@ function main() {
     // Load Bridge
     const bridgemtlLoader = new MTLLoader();
 
-    bridgemtlLoader.setPath('/Lee_Lucian_Assignment_5a/resources/model/bridge/');
+    bridgemtlLoader.setPath('https://luciantlee01.github.io/Lee_Lucian_Assignment_5a/resources/model/bridge/');
 
     bridgemtlLoader.load('Bridges.mtl', (mtl) => {
         mtl.preload();
         const bridgeobjLoader = new OBJLoader();
         bridgeobjLoader.setMaterials(mtl);
-        bridgeobjLoader.setPath('/Lee_Lucian_Assignment_5a/resources/model/bridge/');
+        bridgeobjLoader.setPath('https://luciantlee01.github.io/Lee_Lucian_Assignment_5a/resources/model/bridge/');
 
         bridgeobjLoader.load('Bridges.obj', (bridge) => {
             bridge.scale.set(3, 2, 2);  // Scale down the windmill
@@ -166,7 +166,7 @@ function main() {
 
     // Sky Texture
     const skyTexture = loader.load(
-        '/Lee_Lucian_Assignment_5a/resources/images/sky.jpeg',
+        'https://luciantlee01.github.io/Lee_Lucian_Assignment_5a/resources/images/sky.jpeg',
         () => {
             skyTexture.mapping = THREE.EquirectangularReflectionMapping;
             skyTexture.colorSpace = THREE.SRGBColorSpace;
