@@ -23,8 +23,11 @@
     <!-- Link that the user can click to load Assignment 3a -->
     <a href="#" onclick="loadAssignment3a(); return false;">Go to Assignment 3a</a>
 
-    <!-- Link that the user can click to load Assignment 3a -->
-    <a href="#" onclick="loadAssignment3a(); return false;">Go to Assignment 4</a>
+    <!-- Link that the user can click to load Assignment 4 -->
+    <a href="#" onclick="loadAssignment4(); return false;">Go to Assignment 4</a>
+
+    <!-- Link that the user can click to load Assignment 5a -->
+    <a href="#" onclick="loadAssignment5a(); return false;">Go to Assignment 5a</a>
 
     <!-- Iframe to display content -->
     <iframe id="assignmentFrame" src="Lee_Lucian_Assignment_0/main/asg0.html" width="100%" height="600px"></iframe>
@@ -33,6 +36,7 @@
     <iframe id="assignmentFrame" src="Lee_Lucian_Assignment_2/main/BlockyAnimal.html" width="100%" height="600px"></iframe>
     <iframe id="assignmentFrame" src="Lee_Lucian_Assignment_3a/snowCube.html" width="100%" height="600px"></iframe>
     <iframe id="assignmentFrame" src="Lee_Lucian_Assignment_4/snowCube.html" width="100%" height="600px"></iframe>
+    <iframe id="assignmentFrame" src="Lee_Lucian_Assignment_5b/three.html" width="100%" height="600px"></iframe>
     <script>
         function loadAssignment0() {
             var iframe = document.getElementById('assignmentFrame');
@@ -72,6 +76,13 @@
         function loadAssignment4() {
             var iframe = document.getElementById('assignmentFrame');
             iframe.src = "Lee_Lucian_Assignment_4/snowCube.html";
+        }
+    </script>
+    
+    <script>
+        function loadAssignment5b() {
+            var iframe = document.getElementById('assignmentFrame');
+            iframe.src = "Lee_Lucian_Assignment_5b/three.html";
         }
     </script>
 </body>
