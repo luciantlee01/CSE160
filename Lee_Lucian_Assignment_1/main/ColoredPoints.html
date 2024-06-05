@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Interactive WebGL Points</title>
+  <style>
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body onload="main()">
+  <canvas id="webgl" width="400" height="400"></canvas>
+  <label>
+    R: <input type="range" id="colorR" min="0" max="1" step="0.01" value="1">
+  </label>
+  <label>
+    G: <input type="range" id="colorG" min="0" max="1" step="0.01" value="0">
+  </label>
+  <label>
+    B: <input type="range" id="colorB" min="0" max="1" step="0.01" value="0">
+  </label>
+  <label>
+    Size: <input type="range" id="pointSize" min="1" max="20" step="1" value="10" oninput="updateSize(this.value)">
+  </label>
+  <label>
+    Number of Segments: <input type="range" id="circleSegments" min="3" max="100" value="20" step="1">
+  </label>
+
+  <button onclick="clearCanvas()">Clear Canvas</button>
+  <button onclick="setShape('point')">Point</button>
+  <button onclick="setShape('triangle')">Triangle</button>
+  <button onclick="setShape('circle')">Circle</button>
+  <button onclick="createDrawing()">Create Drawing</button>
+  
+  <script src="../lib/webgl-utils.js"></script>
+  <script src="../lib/webgl-debug.js"></script>
+  <script src="../lib/cuon-utils.js"></script>
+  <script src="Circle.js"></script>
+  <script src="Triangle.js"></script>
+  <script src="ColoredPoints.js"></script>
+</body>
+</html>
